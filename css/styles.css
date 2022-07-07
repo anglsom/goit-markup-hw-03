@@ -311,6 +311,7 @@ line-height: 1.71;
 
     .item-hero-po {
         width: calc((100% - 2 * 30px)/3);
+       
     }
     .item-hero-po:not(:last-child){
         margin-right: 30px;
@@ -320,6 +321,11 @@ line-height: 1.71;
         margin-right: 0;
     } 
     
+    .border-po {
+        border: 1px solid #EEEEEE;
+        margin-bottom: 30px;
+        padding-left: 24px;
+    }
     .title-po {color: var(--title-text-color);
     background-color: var(--primary-white-color);
     font-family: 'Roboto';
