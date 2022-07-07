@@ -9,21 +9,22 @@
         li {list-style-type: none;}
     </style>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link href="//cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"/>
     <link rel="stylesheet" href="./css/styles.css" />
     
 </head>
 <body>
 <!-- Шапка сайта -->    
-<header>
-    <nav>
+<header class="container">
+    <nav class="conteiner main-nav">
         <a href="./index.html" class="logo"><span class="web">Web</span>Studio</a>
         <ul class="site-nav list">
             <li><a href="./index.html" class="link-nav">Студия</a></li>
             <li><a href="./portfolio.html" class="link-nav">Портфолио</a></li>
             <li><a href="" class="link-nav">Контакты</a></li>
         </ul>
-    </nav>
-        <ul class="site-nav list">
+
+        <ul class="site-nav list ">
             <li>
                 <a href="info@devstudio.com" class="link" >info@devstudio.com</a>
             </li>
@@ -31,87 +32,95 @@
                 <a href="+380961111111" class="link">+38 096 111 11 11</a>
             </li>
         </ul>
+    </nav>
 </header>
 
 <main>
     <!-- Герой -->
-    <section class="hero-section">
+    <section class="hero section">
+        <div class="container">
         <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
         <button type="button" class="button primary" >Заказать услугу</button>
+        </div>
     </section>
 
     <!-- Преимущества -->
     <section class="section">
         <h2 class="section-title-pr">Наши преимущества</h2>
-        <ul class="section-pr">
-            <li>
+         <div class="container">
+            <ul class="section-pr">
+            <li class="item-pr">
                 <h3 class="title-pr">Внимание к деталям</h3>
                 <p class="text-pr">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
             </li>
-            <li>
+            <li class="item-pr">
                 <h3 class="title-pr">Пунктуальность</h3>
                 <p class="text-pr">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
             </li>
-            <li>
+            <li class="item-pr">
                 <h3 class="title-pr">Планирование</h3>
                 <p class="text-pr">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
             </li>
-            <li>
+            <li class="item-pr">
                 <h3 class="title-pr">Современные технологии</h3>
                 <p class="text-pr">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
             </li>
         </ul>
+        </div>
     </section>
 
 
     <!-- Чем мы занимаемся -->
     <section class="section">
+        <div class="container">
         <h2 class="section-title-do">Чем мы занимаемся</h2>
-        <ul>
-            <li>
+        <ul class="section-list-do">
+            <li class="item-do">
                 <img src="./images/comp1.jpg" alt="Верстка на компе" width="370"/>
             </li>
-            <li>
+            <li class="item-do">
                 <img src="./images/telefon1.jpg" alt="Телефон" width="370"/>
             </li>
-            <li>
+            <li class="item-do">
                 <img src="./images/color1.jpg" alt="Палитра" width="370"/>
             </li>
         </ul>
+        </div>
     </section>
 
     <!-- Наша команда -->
     <section class="section">
+        <div class="container">
         <h2 class="section-title-com">Наша команда</h2>
         <ul class="section-com">
-            <li>
+            <li class="item-com">
                 <img src="./images/igor1.jpg" alt="Работник Игорь" width="270"/>
                 <h3 class="title-com">Игорь Демьяненко</h3>
                 <p class="text-com">Product Designer</p>
             </li>
-            <li>
+            <li class="item-com">
                 <img src="./images/olga1.jpg" alt="Работник Ольга" width="270"/>
                 <h3 class="title-com">Ольга Репина</h3>
                 <p class="text-com">Frontend Developer</p>
             </li>
-            <li>
+            <li class="item-com">
                 <img src="./images/nico1.jpg" alt="Работник Николай" width="270"/>
                 <h3 class="title-com">Николай Тарасов</h3>
                 <p class="text-com">Marketing</p>
             </li>
-            <li>
+            <li class="item-com">
                 <img src="./images/micha1.jpg" alt="Работник Михаил" width="270"/>
                 <h3 class="title-com">Михаил Ермаков</h3>
                 <p class="text-com">UI Designer</p>
             </li>
         </ul>
+        </div>
     </section>
 </main>
 
 <!-- Футер -->
 <footer class="footer">
-    <div>
-    
+    <div class="container">
         <a href="./index.html" class="logo footer"><span class="web">Web</span>Studio</a>
         <address>
             <ul class="list-footer">
