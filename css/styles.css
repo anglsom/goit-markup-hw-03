@@ -85,14 +85,14 @@ letter-spacing: 0.02em;}
     font-size: 26px;
     line-height: 1.19;
 text-decoration: none;
-letter-spacing: 0.03em;}
+letter-spacing: 0.03em;
+}
 
 .logo:hover {color:var(--accent-color);}
 .logo>.web{color: var(--accent-color);}
 .link {text-decoration: none; 
     color: var(--title-text-color); }
 .link:hover, .link:focus {color: var(--accent-color);}
-
 
 
 
@@ -252,7 +252,9 @@ text-align: center;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
-    text-transform: uppercase;}
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
 
 .text-pr{color: var(--primary-text-color);
     font-family: 'Roboto';
@@ -283,7 +285,7 @@ font-size: 36px;
 line-height: 1.16;
 letter-spacing: 0.03em;
 text-align: center;
-padding-bottom: 50px;}
+margin-bottom: 50px;}
 
 .section-list-do.list {padding-top: 50px;
     padding-bottom: 94px;}
@@ -298,7 +300,9 @@ padding-bottom: 50px;}
     margin-right: 30px;
 }
 /* Section-com */
-.section-comanda {background-color: var(--secondary-background-color);}
+.section-comanda {background-color: var(--secondary-background-color);
+padding-top: 94px;
+padding-bottom: 94px;}
 
 .section-title-com {color: var(--title-text-color);
     background-color: var(--secondary-background-color);
@@ -309,7 +313,7 @@ padding-bottom: 50px;}
     line-height: 1.16;
     letter-spacing: 0.03em;
     text-align: center;
-padding-bottom: 50px;
+    margin-bottom: 50px;
 }
 
     
@@ -372,6 +376,14 @@ line-height: 1.71;
     text-decoration: none;}
 .address-link:hover, .address-link:focus{color: var(--accent-color);}
 
+.webfoot{
+    margin-bottom: 20px;
+}
+.map-mail{
+    margin-bottom: 9px;
+
+}
+
 /* Page Portfolio */
 
 /* Hero */
@@ -410,11 +422,21 @@ line-height: 1.71;
    .item-hero-po:nth-child(3n){
         margin-right: 0;
     } 
-   
+    .item-hero-po:nth-child(7){
+        margin-bottom: 0;
+    } 
+    .item-hero-po:nth-child(8){
+        margin-bottom: 0;
+    } 
+    .item-hero-po:nth-child(9){
+        margin-bottom: 0;
+    } 
     .border-po {
         border: 1px solid #EEEEEE;
         padding-left: 24px;
         padding-bottom: 20px;
+        padding-top: 20px ;
+        padding-right: 24px;
         
     }
     .title-po {color: var(--title-text-color);
