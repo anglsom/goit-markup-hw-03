@@ -6,12 +6,14 @@
 /* цвет кнопок #F5F4FA */
 
 
+
 :root {
     --primary-text-color:#757575;
     --title-text-color:#212121;
     --primary-white-color:#ffffff;
     --accent-color:#18a0fb;
     --secondary-background-color:#F5F4FA;
+    --button-color:#F5F4FA;
 }
 
 html{
@@ -24,6 +26,18 @@ html{
     padding: 0;
     margin: 0;
 }
+/*--
+h1,h2,h2,h3,h4,h5,h6{
+    padding: 0;
+    margin: 0;
+}
+
+ul,p {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+--*/
 
 /* Body */
 
@@ -48,13 +62,15 @@ margin: 0;
 }
 
 /* Header */
-
+.header-page{
+    border-bottom: 1px solid #ECECEC;
+}
 /* Main-nav */
 .main-nav {
     display: flex;
     align-items: center;
 
-    border-bottom: 1px solid #ECECEC;
+    
 }
 
 .logo{color: var(--title-text-color); font-family: 'Raleway', sans-serif; 
@@ -83,13 +99,17 @@ letter-spacing: 0.03em;}
 /* Site nav */
 
 .list{
-
     padding: 0;
     margin:0;
-    list-style: none;
-    display: flex;
-    margin-left: auto;
+    list-style: none;   
 }
+.site-nav{
+    display: flex;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 93px;
+}
+
 .link-nav {color:var(--title-text-color);
     font-family: 'Roboto';
     font-weight: 500;
@@ -98,13 +118,18 @@ letter-spacing: 0.03em;}
     letter-spacing: 0.02em;
     text-decoration:none;
     letter-spacing: 0.02em;
-margin-right: 50px;
-margin-left: 50px;
+/*--margin-right: 50px;
+margin-left: 50px;--*/
 display: block;
 padding-top: 32px;
 padding-bottom: 32px;}
-
-    .link-nav:hover,.link-nav:focus { color: var(--accent-color); 
+/*--.item-link-nav{
+    margin-right: 50px;
+}--*/
+.item-link-nav:not(:last-child){
+    margin-right: 50px;
+}
+ .link-nav:hover,.link-nav:focus { color: var(--accent-color); 
         text-decoration: none;
          background-color:var(--secondary-background-color);} 
 
@@ -124,6 +149,15 @@ margin-right: 50px;
 .link:hover,.link:focus { color: var(--accent-color); 
     text-decoration: none; 
     background-color:var(--secondary-background-color);
+}
+.contact-nav{
+    display: flex;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: auto;
+}
+.item-link-con:not(:last-child){
+    margin-left: 50px;
 }
 
 /* Hero */
@@ -151,6 +185,20 @@ margin-right: 50px;
     
     
 }
+
+.visually-hidden{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
 /*-- .wrapper {max-width: 696px;
 }--*/
 
@@ -178,11 +226,13 @@ text-align: center;
 }
 .button.primary {color:var(--primary-white-color);
     background-color: var(--accent-color);
+    border: #18a0fb;
      cursor: pointer;
      text-align: center;}
 .button.primary:hover{background-color: #f8f8ff; }
 .button.secondary {color:var(--title-text-color);
-     background-color: var(--primary-text-color) ;
+     background-color: var(--button-color) ;
+     border: #F5F4FA;
      cursor: pointer;}
 .button.secondary:hover{background-color: #f8f8ff;}
 
@@ -259,8 +309,8 @@ padding-bottom: 50px;}
     line-height: 1.16;
     letter-spacing: 0.03em;
     text-align: center;
-padding-top: 94px;
-padding-bottom: 50px;}
+padding-bottom: 50px;
+}
 
     
 
@@ -288,12 +338,23 @@ padding-bottom: 50px;}
     font-size: 16px;
     letter-spacing: 0.03em;
     line-height: 1.18;
-margin-top: 10px;
-padding-bottom: 30px;}
+    margin-top: 10px;
+/*--padding-bottom: 30px;--*/}
 
+.border-com{
+    padding-top:30px;
+    padding-bottom: 30px;
+    text-align: center;
+    /*--background-color:var(--primary-white-color);
+    border-radius: 0px 0px 4px 4px;--*/
+}
 
 /* Footer */
 
+/*--.footer-nav{
+    padding-top: 60px;
+    padding-bottom: 60px ;
+}--*/
 .list-footer {font-style: normal;
 list-style: none;
 font-weight: 400;
@@ -301,7 +362,9 @@ font-size: 14px;
 line-height: 1.71;
 }
 .footer {background-color:var(--title-text-color);
-    color: var(--primary-white-color);}
+    color: var(--primary-white-color);
+    padding-top: 60px;
+    padding-bottom: 60px ;}
 .maps-link {background-color: var(--title-text-color);
     color: var(--primary-white-color); 
     text-decoration: none;}

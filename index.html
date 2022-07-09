@@ -15,24 +15,26 @@
 </head>
 <body>
 <!-- Шапка сайта -->    
-<header class="container">
-    <nav class="main-nav container">
+<header class="header-page">
+   <div class="main-nav container">
         <a href="./index.html" class="logo"><span class="web">Web</span>Studio</a>
+     <nav>  
         <ul class="site-nav list">
-            <li><a href="./index.html" class="link-nav">Студия</a></li>
-            <li><a href="./portfolio.html" class="link-nav">Портфолио</a></li>
-            <li><a href="" class="link-nav">Контакты</a></li>
+            <li class="item-link-nav"><a href="./index.html" class="link-nav">Студия</a></li>
+            <li class="item-link-nav"><a href="./portfolio.html" class="link-nav">Портфолио</a></li>
+            <li class="item-link-nav"><a href="" class="link-nav">Контакты</a></li>
         </ul>
+    </nav> 
 
-        <ul class="site-nav list ">
-            <li>
+        <ul class="contact-nav list ">
+            <li class="item-link-con">
                 <a href="info@devstudio.com" class="link" >info@devstudio.com</a>
             </li>
-            <li>
+            <li class="item-link-con">
                 <a href="+380961111111" class="link">+38 096 111 11 11</a>
             </li>
         </ul>
-    </nav>
+    </div>
 </header>
 
 <main>
@@ -47,7 +49,7 @@
     <!-- Преимущества -->
     <section class="section">
         <div class="container">
-        <h2 class="section-title-pr">Наши преимущества</h2>
+        <h2 class="section-title-pr visually-hidden">Наши преимущества</h2>
             <ul class="section-pr">
             <li class="item-pr">
                 <h3 class="title-pr">Внимание к деталям</h3>
@@ -95,23 +97,31 @@
         <ul class="section-com">
             <li class="item-com">
                 <img src="./images/igor1.jpg" alt="Работник Игорь" width="270"/>
+            <div class="border-com">
                 <h3 class="title-com">Игорь Демьяненко</h3>
                 <p class="text-com">Product Designer</p>
+            </div>
             </li>
             <li class="item-com">
                 <img src="./images/olga1.jpg" alt="Работник Ольга" width="270"/>
+            <div class="border-com">
                 <h3 class="title-com">Ольга Репина</h3>
                 <p class="text-com">Frontend Developer</p>
+            </div> 
             </li>
             <li class="item-com">
                 <img src="./images/nico1.jpg" alt="Работник Николай" width="270"/>
+             <div class="border-com">  
                 <h3 class="title-com">Николай Тарасов</h3>
                 <p class="text-com">Marketing</p>
+            </div> 
             </li>
             <li class="item-com">
                 <img src="./images/micha1.jpg" alt="Работник Михаил" width="270"/>
+            <div class="border-com">
                 <h3 class="title-com">Михаил Ермаков</h3>
                 <p class="text-com">UI Designer</p>
+            </div> 
             </li>
         </ul>
         </div>
